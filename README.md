@@ -2,11 +2,6 @@
 
 A clean, modern web app to merge multiple PDF files into one — right in your browser. No sign-up, no file storage, 100% private.
 
-![PDF Merger](https://img.shields.io/badge/Status-Live-brightgreen?style=flat-square)
-![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-8b5cf6?style=flat-square)
-![Made with](https://img.shields.io/badge/Made%20with-pdf--lib-ec4899?style=flat-square)
-
 ---
 
 ## ✨ Features
@@ -29,17 +24,6 @@ A clean, modern web app to merge multiple PDF files into one — right in your b
 
 ---
 
-## 🛠️ Tech Stack
-
-| Layer | Tech |
-|---|---|
-| Frontend | HTML, CSS, Vanilla JS |
-| Backend | Node.js, Express |
-| PDF Engine | [pdf-lib](https://pdf-lib.js.org/) |
-| File Uploads | Multer |
-
----
-
 ## 📦 Run Locally
 
 ```bash
@@ -59,18 +43,7 @@ http://localhost:3000
 
 ---
 
-## 📁 Project Structure
 
-```
-PDF-Merger/
-├── public/
-│   └── index.html        # Frontend UI
-├── index.js              # Node.js PDF merger class
-├── PDFMergerBase.js      # Base merger logic (pdf-lib)
-├── parsePagesString.js   # Page range parser
-├── server.js             # Express server
-└── package.json
-```
 
 ---
 
