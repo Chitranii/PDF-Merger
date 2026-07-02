@@ -35,14 +35,14 @@
     <div class="card-body">
 
       <div class="drop-zone" id="drop-zone">
-        <input type="file" id="file-input" accept=".pdf" multiple />
+        <input type="file" id="file-input" accept=".pdf" multiple aria-label="Upload PDF files" title="Upload PDF files" />
         <div class="drop-icon">📂</div>
         <h3>Drop your PDF files here</h3>
         <p>or <span class="browse">browse files</span> from your computer &nbsp;·&nbsp; Max 50MB each</p>
       </div>
 
       <div class="list-header" id="list-header">
-        <div style="display:flex;align-items:center;gap:10px;">
+        <div class="list-title-row">
           <span class="list-title">Files</span>
           <span class="badge" id="file-badge">0</span>
         </div>
@@ -51,9 +51,9 @@
 
       <ul id="file-list"></ul>
 
-      <div class="divider" id="divider" style="display:none;"></div>
+      <div class="divider hidden" id="divider"></div>
 
-      <div id="bottom-section" style="display:none;">
+      <div id="bottom-section" class="hidden">
         <div class="field-label">Output filename</div>
         <div class="output-row">
           <span class="output-prefix">📄</span>
@@ -145,8 +145,8 @@
       const hasOversized = files.some(f => f.file.size > MAX_SIZE)
       const show = files.length > 0
       listHeader.className = show ? 'list-header visible' : 'list-header'
-      divider.style.display = show ? 'block' : 'none'
-      bottomSection.style.display = show ? 'block' : 'none'
+      divider.classList.toggle('hidden', !show)
+      bottomSection.classList.toggle('hidden', !show)
       mergeBtn.disabled = files.length < 2 || hasOversized
       fileBadge.textContent = files.length
     }

@@ -468,3 +468,7 @@ footer {
   position: relative;
   z-index: 1;
 }
+
+/* Utility */
+.hidden { display: none; }
+.list-title-row { display: flex; align-items: center; gap: 10px; }
