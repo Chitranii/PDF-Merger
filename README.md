@@ -25,7 +25,7 @@ A clean, modern web app to merge multiple PDF files into one — right in your b
 
 ## 🚀 Live Demo
 
-> 🔗 [Click here to try it live](#) ← *(add your Render link here)*
+> 🔗 https://pdf-mergeer.netlify.app/ ← *(add your Render link here)*
 
 ---
 
